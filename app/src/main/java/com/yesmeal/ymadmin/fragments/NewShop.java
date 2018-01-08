@@ -3,19 +3,14 @@ package com.yesmeal.ymadmin.fragments;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -51,8 +46,8 @@ public class NewShop extends AppCompatActivity implements GoogleApiClient.OnConn
     private ImageButton placePicker;
 //    private FloatingActionButton fabPickPlace;
     private RadioGroup radioGroup;
-    private RadioButton serviceCharegeYes;
-    private RadioButton serviceCharegeNo;
+    private RadioButton serviceChargeYes;
+    private RadioButton serviceChargeNo;
     private Button saveShop;
 
     double lat = 0;
@@ -161,10 +156,10 @@ public class NewShop extends AppCompatActivity implements GoogleApiClient.OnConn
         shopName = (TextInputEditText) findViewById(R.id.shopName);
         addressTextView = (TextInputEditText) findViewById(R.id.addressTextView);
         radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
-        serviceCharegeYes = (RadioButton) findViewById(R.id.serviceCharegeYes);
-        serviceCharegeNo = (RadioButton) findViewById(R.id.serviceCharegeNo);
+        serviceChargeYes = (RadioButton) findViewById(R.id.serviceCharegeYes);
+        serviceChargeNo = (RadioButton) findViewById(R.id.serviceCharegeNo);
         saveShop = (Button) findViewById(R.id.saveShop);
-        radioGroup.check(serviceCharegeNo.getId());
+        radioGroup.check(serviceChargeYes.getId());
     }
 
     @Override
