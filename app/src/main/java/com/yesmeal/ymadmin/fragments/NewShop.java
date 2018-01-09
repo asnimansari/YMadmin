@@ -104,7 +104,6 @@ public class NewShop extends AppCompatActivity implements GoogleApiClient.OnConn
                         case 1:
                             serviceCharge = false;
                             break;
-
                     }
 
                     Shop shop1 = new Shop();
@@ -116,9 +115,6 @@ public class NewShop extends AppCompatActivity implements GoogleApiClient.OnConn
                     shop1.setServiceChargeCollectable(serviceCharge);
                     shop1.setId(uuid);
                     shop1.setShopname(shop);
-
-
-
                     DatabaseReference databaseReference = CusUtils.getDatabase().getReference().child("shops");
                     databaseReference.child(uuid).setValue(shop1).addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
@@ -134,10 +130,6 @@ public class NewShop extends AppCompatActivity implements GoogleApiClient.OnConn
 
                         }
                     });
-
-
-
-
                 }
                 else {
                     Toast.makeText(NewShop.this, "Enter Shop Name", Toast.LENGTH_SHORT).show();
