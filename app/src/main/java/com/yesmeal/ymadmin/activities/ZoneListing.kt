@@ -1,6 +1,7 @@
 package com.yesmeal.ymadmin.activities
 
 import android.content.Intent
+import android.icu.text.DateTimePatternGenerator.ZONE
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
@@ -12,6 +13,7 @@ import com.google.firebase.database.ValueEventListener
 import com.yesmeal.ymadmin.R
 import com.yesmeal.ymadmin.models.Shop
 import com.yesmeal.ymadmin.models.Zone
+import com.yesmeal.ymadmin.util.Constants
 import com.yesmeal.ymadmin.util.CusUtils
 
 
@@ -24,7 +26,7 @@ class ZoneListing : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_zone_listing)
 
-        var databaseReference = CusUtils.getDatabase().reference.child("zones")
+        var databaseReference = CusUtils.getDatabase().reference.child(Constants.ZONES)
         databaseReference.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(p0: DataSnapshot?) {
 

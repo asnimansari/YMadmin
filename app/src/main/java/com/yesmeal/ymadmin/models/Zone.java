@@ -6,4 +6,10 @@ package com.yesmeal.ymadmin.models;
 
 public class Zone {
     public String zoneName;
+    public Zone(){
+
+    }
+    public Zone(String zone){
+        this.zoneName = zone;
+    }
 }
