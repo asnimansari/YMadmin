@@ -1,10 +1,7 @@
-package com.yesmeal.ymadmin
+package com.yesmeal.ymadmin.activities
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.design.widget.Snackbar
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.Menu
@@ -12,14 +9,16 @@ import android.view.MenuItem
 import android.widget.ArrayAdapter
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ValueEventListener
+import com.yesmeal.ymadmin.util.CusUtils
+import com.yesmeal.ymadmin.R
+import com.yesmeal.ymadmin.models.Shop
 import com.yesmeal.ymadmin.fragments.NewShop
 
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
-class MainActivity : AppCompatActivity() {
+class ShopsListing : AppCompatActivity() {
 
 //    var shops = ArrayList<String>?
 

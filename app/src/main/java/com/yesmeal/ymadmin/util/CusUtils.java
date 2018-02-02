@@ -1,4 +1,4 @@
-package com.yesmeal.ymadmin;
+package com.yesmeal.ymadmin.util;
 
 import com.google.firebase.database.FirebaseDatabase;
 

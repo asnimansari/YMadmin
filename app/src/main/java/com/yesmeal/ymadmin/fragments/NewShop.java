@@ -23,10 +23,10 @@ import com.google.android.gms.location.places.ui.PlacePicker;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
-import com.yesmeal.ymadmin.CusUtils;
-import com.yesmeal.ymadmin.MainActivity;
+import com.yesmeal.ymadmin.util.CusUtils;
+import com.yesmeal.ymadmin.activities.ShopsListing;
 import com.yesmeal.ymadmin.R;
-import com.yesmeal.ymadmin.Shop;
+import com.yesmeal.ymadmin.models.Shop;
 
 import java.util.UUID;
 
@@ -112,7 +112,7 @@ public class NewShop extends AppCompatActivity implements GoogleApiClient.OnConn
                     shop1.setAddress(add);
                     shop1.setLatitude(lat);
                     shop1.setLongitude(lon);
-        
+
                     shop1.setId(uuid);
                     shop1.setShopname(shop);
                     DatabaseReference databaseReference = CusUtils.getDatabase().getReference().child("shops");
@@ -120,7 +120,7 @@ public class NewShop extends AppCompatActivity implements GoogleApiClient.OnConn
                         @Override
                         public void onSuccess(Void aVoid) {
                             Toast.makeText(NewShop.this, "Saved", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(NewShop.this,MainActivity.class));
+                            startActivity(new Intent(NewShop.this, ShopsListing.class));
                             finish();
                         }
                     }).addOnFailureListener(new OnFailureListener() {

@@ -1,4 +1,4 @@
-package com.yesmeal.ymadmin;
+package com.yesmeal.ymadmin.models;
 
 import java.util.UUID;
 

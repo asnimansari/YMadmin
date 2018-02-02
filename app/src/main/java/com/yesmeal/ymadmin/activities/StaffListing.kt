@@ -1,12 +1,13 @@
-package com.yesmeal.ymadmin
+package com.yesmeal.ymadmin.activities
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.yesmeal.ymadmin.R
 
-class NavigationActivity : AppCompatActivity() {
+class StaffListing : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_navigation)
+        setContentView(R.layout.activity_staff_listing)
     }
 }
