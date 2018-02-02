@@ -14,7 +14,7 @@ import com.yesmeal.ymadmin.models.Shop
 import com.yesmeal.ymadmin.models.Staff
 import com.yesmeal.ymadmin.util.CusUtils
 import kotlinx.android.synthetic.main.activity_staff_listing.*
-import kotlinx.android.synthetic.main.content_main.*
+import kotlinx.android.synthetic.main.content_staff_listing.*
 
 class StaffListing : AppCompatActivity() {
 

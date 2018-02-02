@@ -16,7 +16,7 @@ import com.yesmeal.ymadmin.util.CusUtils
 
 
 import kotlinx.android.synthetic.main.activity_zone_listing.*
-import kotlinx.android.synthetic.main.content_main.*
+import kotlinx.android.synthetic.main.content_zone_listing.*
 
 class ZoneListing : AppCompatActivity() {
 
