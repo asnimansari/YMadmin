@@ -17,7 +17,7 @@
             android:value="AIzaSyCIqaCA55NCR2TP95TiORYOspcG4SzOob4" />
 
         <activity
-            android:name=".activities.ShopsListing"
+            android:name=".activities.NavigationActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -30,7 +30,7 @@
             android:name=".fragments.NewShop"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activities.NavigationActivity" />
+        <activity android:name=".activities.ShopsListing" />
         <activity android:name=".activities.ZoneListing" />
         <activity android:name=".activities.StaffListing"></activity>
     </application>
