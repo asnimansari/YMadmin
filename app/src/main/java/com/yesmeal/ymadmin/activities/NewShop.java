@@ -1,4 +1,4 @@
-package com.yesmeal.ymadmin.fragments;
+package com.yesmeal.ymadmin.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -24,7 +24,6 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.yesmeal.ymadmin.util.CusUtils;
-import com.yesmeal.ymadmin.activities.ShopsListing;
 import com.yesmeal.ymadmin.R;
 import com.yesmeal.ymadmin.models.Shop;
 

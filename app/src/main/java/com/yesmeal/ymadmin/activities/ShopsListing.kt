@@ -13,7 +13,6 @@ import com.google.firebase.database.ValueEventListener
 import com.yesmeal.ymadmin.util.CusUtils
 import com.yesmeal.ymadmin.R
 import com.yesmeal.ymadmin.models.Shop
-import com.yesmeal.ymadmin.fragments.NewShop
 
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
@@ -59,7 +58,7 @@ class ShopsListing : AppCompatActivity() {
 
         fab.setOnClickListener { view ->
 
-            startActivity(Intent(MainActivity@this,NewShop::class.java))
+            startActivity(Intent(MainActivity@this, NewShop::class.java))
 
 
 
