@@ -58,7 +58,7 @@ class ShopsListing : AppCompatActivity() {
 
         fab.setOnClickListener { view ->
 
-            startActivity(Intent(MainActivity@this, NewShop::class.java))
+            startActivity(Intent(ShopsListing@this, NewShop::class.java))
 
 
 
