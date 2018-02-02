@@ -30,7 +30,8 @@
             android:name=".activities.NewShop"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activities.ShopsListing" />
+        <activity android:name=".activities.ShopsListing"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activities.ZoneListing"
             android:label="@string/title_activity_zone_listing"

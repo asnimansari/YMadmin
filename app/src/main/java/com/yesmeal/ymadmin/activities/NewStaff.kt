@@ -2,6 +2,7 @@ package com.yesmeal.ymadmin.activities
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.yesmeal.ymadmin.R
 
 class NewStaff : AppCompatActivity() {
 
