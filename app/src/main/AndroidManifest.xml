@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.yesmeal.ymadmin">
-    
-    <!--<permission android:name="I"-->
-    <uses-permission android:name="android.permission.INTERNET" />
 
+    <!-- <permission android:name="I" -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -14,8 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <meta-data
-        android:name="com.google.android.geo.API_KEY"
-        android:value="AIzaSyCIqaCA55NCR2TP95TiORYOspcG4SzOob4"/>
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCIqaCA55NCR2TP95TiORYOspcG4SzOob4" />
 
         <activity
             android:name=".MainActivity"
@@ -26,12 +25,12 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity><activity
+        </activity>
+        <activity
             android:name=".fragments.NewShop"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".NavigationActivity"></activity>
     </application>
 
 </manifest>
