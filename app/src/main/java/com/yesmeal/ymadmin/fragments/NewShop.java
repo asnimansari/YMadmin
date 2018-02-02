@@ -112,7 +112,7 @@ public class NewShop extends AppCompatActivity implements GoogleApiClient.OnConn
                     shop1.setAddress(add);
                     shop1.setLatitude(lat);
                     shop1.setLongitude(lon);
-                    shop1.setServiceChargeCollectable(serviceCharge);
+        
                     shop1.setId(uuid);
                     shop1.setShopname(shop);
                     DatabaseReference databaseReference = CusUtils.getDatabase().getReference().child("shops");
