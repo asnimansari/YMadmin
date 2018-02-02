@@ -14,7 +14,7 @@ public class Shop {
     public double longitude;
     public String address;
     public String id;
-    public boolean serviceChargeCollectable = false;
+
 
     public Shop(){
 //        id = UUID.randomUUID().toString();
@@ -62,13 +62,6 @@ public class Shop {
         this.id = id;
     }
 
-    public boolean isServiceChargeCollectable() {
-        return serviceChargeCollectable;
-    }
-
-    public void setServiceChargeCollectable(boolean serviceChargeCollectable) {
-        this.serviceChargeCollectable = serviceChargeCollectable;
-    }
 }
 
 
